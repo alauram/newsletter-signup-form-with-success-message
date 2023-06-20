@@ -14,8 +14,9 @@
 }
 body {
     background-color: var(--Charcoal-Grey);
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     font-size: 1rem;
@@ -115,7 +116,7 @@ button:hover {
     background: linear-gradient(80deg, rgba(255,83,121,1) 25%, rgba(255,103,62,1) 93%);    
     box-shadow: 11px 5px 15px 10px rgba(255,98,87,0.23);
   }
-.sucess{
+.success{
     display: flex;
     flex-direction: column;
     background-color: var(--White);
@@ -126,22 +127,104 @@ button:hover {
     width: 30%;
     gap: 1.563rem;
 }
-.sucess img {
+.success img {
     width: 2.5rem;
 }
 .user-email {
     font-weight: 700;
 }
-.sucess h1 {
+.success h1 {
     font-size: 3rem;
     line-height: 3rem;
 }
 .hide {
     display:none;
 }
+.mobile {
+    display: none;
+}
 @keyframes top {
     from {
         transform: translateY(-50em);
         opacity: 0;
+    }
+}
+@media screen and (max-width:600px){
+    body {
+        background-color: white;
+    }
+    .right {
+        display: none;
+    }
+    .mobile {
+        display: inherit;
+    }
+    .mobile img{
+        width: 100%;
+    }
+    .card {
+        padding: 0;
+        gap: 0;
+        border-radius: 0%;
+    }
+    .left{
+        max-width: 100%;
+    }
+    .left {
+        padding: 0;
+   
+    }
+    .card p {
+        font-size: 1.1rem;
+    }
+    .left .top {
+        gap: 2rem;
+        padding-left: 1.5rem;
+    }
+    .left .top h1 {
+        font-size: 2.8rem;
+        
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375rem;
+    }
+    .list img {
+        width: 1.5rem;
+        padding-bottom: 0.625rem;
+    }
+    .bottom {
+        padding: 0 1rem;
+    }
+    .labels {
+        font-size: 1rem;
+    }
+    .success{
+        border-radius: 0;
+        padding: 2rem;
+        width: 100%;
+        gap: 23rem;
+    }
+    .success img {
+        width: 4rem;
+    }
+    .success h1 {
+        font-size: 2.5rem;
+        line-height:2.5rem;
+    }
+    .success-top {
+        display:flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .success button {
+        width: 100%;
+    }
+    .text {
+        font-size: 1.1rem;
+    }
+    span {
+        font-weight: 700;
     }
 }
