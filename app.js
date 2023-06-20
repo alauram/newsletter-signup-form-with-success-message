@@ -1,5 +1,5 @@
 const card = document.querySelector(".card");
-const sucess = document.querySelector(".sucess");
+const sucess = document.querySelector(".success");
 const email = document.querySelector(".email");
 const submit = document.querySelector(".submit");
 const error = document.querySelector(".error");
